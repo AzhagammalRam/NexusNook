@@ -1,0 +1,166 @@
+.bg-color {
+    background-color: #edeaea;
+}
+.wrapper {
+	 width: 100%;
+	 height: 300px;
+	 background: rgb(254, 253, 253);
+	 margin: auto;
+	 position: relative;
+	 overflow: hidden;
+	 border-radius: 10px 10px 10px 10px;
+	 box-shadow: 0;
+	 transform: scale(0.95);
+	 transition: box-shadow 0.5s, transform 0.5s;
+}
+ /* .wrapper:hover {
+	 transform: scale(1);
+	 box-shadow: 5px 20px 30px rgba(0, 0, 0, 0.2);
+} */
+ .wrapper .container1 {
+	 width: 100%;
+	 height: 100%;
+}
+ .wrapper .container1 .top {
+	 height: 65%;
+	 width: 100%;
+	 /* background: url(https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg) no-repeat center center; */
+	 -webkit-background-size: 100%;
+	 -moz-background-size: 100%;
+	 -o-background-size: 100%;
+	 background-size: 40% !important;
+}
+ .wrapper .container1 .bottom {
+	 width: 200%;
+	 height: 35%;
+	 transition: transform 0.5s;
+}
+ .wrapper .container1 .bottom.clicked {
+	 transform: translateX(-50%);
+}
+ .wrapper .container1 .bottom h1 {
+	 margin: 0;
+	 padding: 0;
+}
+ .wrapper .container1 .bottom p {
+	 margin: 0;
+	 padding: 0;
+	 font-size: 12px;
+    line-height: 1.5;
+}
+ .wrapper .container1 .bottom .left {
+	 height: 100%;
+	 width: 50%;
+	 background: #f4f4f4;
+	 position: relative;
+	 float: left;
+}
+ .wrapper .container1 .bottom .left .details {
+	 padding: 10px;
+	 float: left;
+	 width: calc(70% - 0px);
+}
+@media (min-width: 700px) and (max-width: 1024px) {
+  .wrap-text {
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+  }
+}
+.wrapper .container1 .bottom .left .buy {
+  float: right;
+  width: calc(30% - 2px);
+  height: 100%;
+  background: #f1f1f1;
+  transition: background 0.5s;
+  border-left: solid thin rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ .wrapper .container1 .bottom .left .buy i {
+	 font-size: 30px;
+	 padding: 30px;
+	 color: #254053;
+	 transition: transform 0.5s;
+}
+ .wrapper .container1 .bottom .left .buy:hover {
+	 background: #a6cdde;
+}
+ .wrapper .container1 .bottom .left .buy:hover i {
+	 transform: translateY(5px);
+	 color: #00394b;
+}
+ .wrapper .container1 .bottom .right {
+	 width: 50%;
+	 background: #a6cdde;
+	 color: white;
+	 float: right;
+	 height: 200%;
+	 overflow: hidden;
+}
+ .wrapper .container1 .bottom .right .details {
+	 padding: 10px;
+	 float: right;
+	 width: calc(70% - 0px);
+}
+ .wrapper .container1 .bottom .right .done {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	 width: calc(30% - 2px);
+	 float: left;
+	 transition: transform 0.5s;
+	 border-right: solid thin rgba(255, 255, 255, 0.3);
+	 height: 50%;
+}
+ .wrapper .container1 .bottom .right .done i {
+	 font-size: 30px;
+	 padding: 30px;
+	 color: white;
+}
+ .wrapper .container1 .bottom .right .remove {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	 width: calc(30% - 1px);
+	 clear: both;
+	 border-right: solid thin rgba(255, 255, 255, 0.3);
+	 height: 50%;
+	 background: #bc3b59;
+	 transition: transform 0.5s, background 0.5s;
+}
+ .wrapper .container1 .bottom .right .remove:hover {
+	 background: #9b2847;
+}
+ .wrapper .container1 .bottom .right .remove:hover i {
+	 transform: translateY(5px);
+}
+ .wrapper .container1 .bottom .right .remove i {
+	 transition: transform 0.5s;
+	 font-size: 30px;
+	 padding: 30px;
+	 color: white;
+}
+ .wrapper .container1 .bottom .right:hover .remove, .wrapper .container1 .bottom .right:hover .done {
+	 transform: translateY(-100%);
+}
+.align-left-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Optional: aligns vertically */
+}
+.red-clr {
+	color: red;
+}
+.blue-clr {
+	color: blue;
+}
+.green-clr {
+	color: green;
+}
+.capitalize {
+	text-transform: capitalize;
+}

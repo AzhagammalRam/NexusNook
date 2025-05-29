@@ -1,0 +1,36 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+/* Css for global use */
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.custom-filter-panel {
+  width: 300px; /* default for desktop */
+}
+
+@media (max-width: 1024px) {
+  .custom-filter-panel {
+    width: 220px; /* reduced width on 1024px */
+  }
+}
+
+@media (max-width: 320px) {
+  .css-1t5upmc-MuiFormControl-root {
+    width: 250px !important;
+  }
+  .logo-size {
+    font-size: 16px !important;
+  }
+}
+@media (min-width: 990px) and (max-width: 1024px) {
+  .filter-width {
+    width: 25%;
+  }
+  .css-1t5upmc-MuiFormControl-root {
+    width: 210px !important;
+  }
+}
